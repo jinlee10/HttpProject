@@ -1,0 +1,51 @@
+<!DOCTYPE html><!-- 서버에선 name의이름으로 불러온다 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Form연습</title>
+	</head>
+	<body>
+		<h1>Form연습!</h1>
+		<p>서버로 데이터를 보낼려면 얘가 있어야돼!</p>
+		<form action='a.js' method="get">
+		 <fieldset>
+		  <legend>로그인</legend>
+			<p>
+			<input type="text" name="addr" placeholder='계좌번호입력'> 
+			</p>
+			<p>
+			<input type="password" name="pw" placeholder='계좌비밀번호입력'> 
+			</p>
+			<p>
+			<textArea name='content' cols='40' rows='10'>여긴 초기값이고 
+			얘넨 다 서버로 보내기용이니까 이름이있어야돼</textArea>
+			</p>
+			<p>
+			<input type="checkbox" name="eemail" value='o'>용개형 보고있지?
+			</p>
+			<p>
+			<input type="radio" name="size" value='1'> 빵
+			<input type="radio" name="size" value='2'> 음료
+			<input type="radio" name="size" value='3'> 과자
+			</p>
+			
+			<p>
+			<select name='lang' size='2'>
+				<option value='im'>java</option>
+				<option value='actually'>android</option>
+				<option value='going'>node.js</option>
+				<option value='through'>mysql</option>
+			</select>
+			</p>
+			
+			<p>
+			<input type="submit" value="외쳐! EE!">
+			</p>
+			
+		  </fieldset>
+		  	<p>
+		  	<input type="color" name="clr" value="cl">
+		  	</p>
+		</form>
+	</body>
+</html>

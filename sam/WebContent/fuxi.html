@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h1>8월1일 table복습!</h1>
+		<p>한번더 하구가자</p>
+		<h2>테이블 예제</h2>
+		<table border='3'>
+			<tr>
+				<th>분류</th>
+				<th colspan="3">값</th>
+			</tr>
+			<tr>
+				<td rowspan="4">종류</td>
+				<td rowspan="2">지구형</td>
+				<td>지구</td>
+				<td>금성</td>
+			</tr>
+			<tr>
+				<td>수성</td>
+				<td>화성</td>
+			</tr>
+			<tr>
+				<td rowspan="2">목성형</td>
+				<td colspan="2" rowspan="2">
+				목성 토성 천왕성<br />
+				해왕성
+				</td>
+			</tr>
+			<tr></tr>
+		</table>
+		<p><hr></p>
+		<h2>form예제</h2>
+		<h3>Create account</h3>
+		<form action='a.js' method='get'>
+			<p>
+				Name<br/>
+				<input type="text" name="fname">
+				<input type="text" name="lname">
+			</p>
+			<p>
+				Username<br/>
+				<input type="text" name='uname' placeholder='id를 입력하시오'>
+			</p>
+			<p>
+				Email<br/>
+				<input type="text" name="email" placeholder='aaa@gmail.com'> 
+			</p>
+			<p>
+				Password<br/>
+				<input type="password" name="pw" placeholder='At least 8 characters'>
+			</p>
+			<p>
+				Re-enter password<br/>
+				<input type="password" name="repw">
+			</p>
+			<p>
+				Birth date<br/>
+				<input type="text" name="byear" placeholder="year">
+				<select name="bmonth">
+					<option value="0">선택</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<input type="text" name="bdate" placeholder="date">
+			</p>
+			<p>
+				Gender<br/>
+				<input type="radio" name="g"> Male
+				<input type="radio" name="g"> Female
+				<input type="radio" name="g"> Other
+			</p>
+			<p>
+				Country 
+				<select>
+					<option value="a" name="c">가나</option>
+					<option value="b" name="c">가봉</option>
+					<option value="c" name="c">따봉</option>
+					<option value="d" name="c">우즈베키스탄</option>
+					<option value="e" name="c">나이제리아</option>
+				</select>
+			</p>
+			<p>
+				<input type="reset" name='rst'>
+				<input type="submit" name='sbmt' value="Next">
+			</p>
+		
+		
+		
+		</form>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
